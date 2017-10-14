@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment 1 - INFO 253 Web Architecture</title>
+        <meta charset="utf-8">
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        <link rel="stylesheet" href="static/css/style.css">
+        <link rel="stylesheet" href="static/css/normalize.css">
+        <link rel="stylesheet" href="static/css/skeleton.css">
+    </head>
+    <body>
+        <header id="header">
+            <a class="header-link" href="{{ url_for('render_index') }}">Home</a>
+            <a class="header-link" href="{{ url_for('render_about') }}">About Us</a>
+            <a class="header-link" href="{{ url_for('render_contact') }}">Contact Us</a>
+        </header>
+        <div class="container">
+            <h1 id="main-title">Contact Us</h1>
+            <div id="formResult">
+                {% for notification in notifications %}
+                {{ notification }}
+                {% endfor %}
+            </div>
+            <form id="contactForm" action="/contact" method="POST">
+                <div>Name: <br>
+                    <input type="text" name="name" id="name"/>
+                </div>
+                <div>
+                    Subject:<br>
+                    <input type="text" name="subject" id="subject"/>
+                </div>
+                <div>
+                    Message: <br>
+                    <textarea name="message" id="message"></textarea>
+                </div>
+                <input type="submit"/>
+            </form>
+        </div>
+        <footer id="footer">
+            <a class="footer-link" href="{{ url_for('render_index') }}">Home</a>
+            <a class="footer-link" href="{{ url_for('render_about') }}">About Us</a>
+            <a class="footer-link" href="{{ url_for('render_contact') }}">Contact Us</a>
+        </footer>
+        <script src="../static/js/script.js"></script>
+    </body>
+</html>
+    

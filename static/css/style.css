@@ -1,3 +1,99 @@
-h1 {
-	color: blue;
+body {
+    text-align: center;
+}
+
+#header {
+    padding: 15px;
+    background-color: #797368;
+}
+
+#footer {
+    margin-top: 15px;
+    padding: 15px;
+    background-color: #e8e6e3;
+}
+
+#title-img {
+    height: 300px;
+    width: 100%;
+    box-shadow: 10px 1px 5px #888888;
+}
+
+.error {
+    color: red;
+}
+
+.success {
+    color: green;
+}
+
+
+#message {
+    height: 150px;
+    width: 300px;
+}
+
+.container {
+    padding: 45px;
+}
+
+#main-title {
+    margin-top: 25px;
+}
+
+#main-links {
+    text-align: left;
+    margin-left: 30%;
+}
+
+#personal-pic {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+#comment {
+    text-align: center;
+}
+
+p {
+    text-align: left;
+}
+
+a {
+    text-decoration: none;
+    color: #1EAEDB;
+}
+
+ol {
+    text-align: left;
+    margin-left: 3%;
+}
+
+ul {
+    text-align: left;
+    margin-left: 3%;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a.header-link {
+    color: white;
+    margin: 15px;
+}
+
+a.footer-link {
+    color: #4a4844;
+    margin: 15px;
+}
+
+a.header-link:hover {
+    color: #4a4844;
+}
+
+a.footer-link:hover {
+    color: black;
+    text-decoration: underline;
 }

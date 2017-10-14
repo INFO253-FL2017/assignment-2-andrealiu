@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment 1 - INFO 253 Web Architecture</title>
+        <meta charset="utf-8">
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        <link rel="stylesheet" href="static/css/style.css">
+        <link rel="stylesheet" href="static/css/normalize.css">
+        <link rel="stylesheet" href="static/css/skeleton.css">
+    </head>
+    <body>
+        <header id="header">
+            <a class="header-link" href="{{ url_for('render_index') }}">Home</a>
+            <a class="header-link" href="{{ url_for('render_about') }}">About Us</a>
+            <a class="header-link" href="{{ url_for('render_contact') }}">Contact Us</a>
+        </header>
+        <div class="container">
+            <h1 id="main-title">About Us</h1>
+            <img src="static/images/me.jpg" alt="" id="personal-pic">
+            <h3>Andrea Liu</h3>
+            <p>
+                My name is Andrea Liu, and I'm a 4th year CS major at UC Berkeley. My hobbies are coding, drawing, as well as swimming! My goals right now are to find my niche in the software industry, and learning about web architecture is a step towards that.
+            </p>
+        </div>
+        <footer id="footer">
+            <a class="footer-link" href="{{ url_for('render_index') }}">Home</a>
+            <a class="footer-link" href="{{ url_for('render_about') }}">About Us</a>
+            <a class="footer-link" href="{{ url_for('render_contact') }}">Contact Us</a>
+        </footer>
+    </body>
+</html>
+    

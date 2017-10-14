@@ -1,14 +1,44 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Assignment 2</title>
-		<meta charset="utf-8" />
-		<link rel="stylesheet" href="/static/css/style.css" />
-	</head>
-	<body>
-		<h1>Hello World</h1>
+    <head>
+        <title>Assignment 1 - INFO 253 Web Architecture</title>
+        <meta charset="utf-8">
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        <link rel="stylesheet" href="static/css/style.css">
+        <link rel="stylesheet" href="static/css/normalize.css">
+        <link rel="stylesheet" href="static/css/skeleton.css">
+    </head>
+    <body>
+        <div class="row">
+            <header id="header">
+                <a class="header-link" href="{{ url_for('render_index') }}">Home</a>
+                <a class="header-link" href="{{ url_for('render_about') }}">About Us</a>
+                <a class="header-link" href="{{ url_for('render_contact') }}">Contact Us</a>
+            </header>
+        </div>
+        <div class="row">
+        <img src="static/images/home-picture.jpg" alt = "" id="title-img">
 
-		<script src="/static/js/script.js"></script>
-
-	</body>
-</html>		
+        </div>
+        <div class="container">
+            <h1 id="main-title">Improving Your Lifestyle</h1>
+            <div id="main-links">
+                <ul>
+                    <li><a href="{{ url_for('render_blog1') }}">8 Experiments in Motivation</a></li>
+                    <li><a href="{{ url_for('render_blog2') }}">A Mindful Shift of Focus</a></li>
+                    <li><a href="{{ url_for('render_blog3') }}">How to Develop an Awesome Sense of Direction</a></li>
+                    <li><a href="{{ url_for('render_blog4') }}">Training to Be a Good Writer</a></li>
+                    <li><a href="{{ url_for('render_blog5') }}">What Productivity Systems Won't Solve</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <footer id="footer">
+                <a class="footer-link" href="{{ url_for('render_index') }}">Home</a>
+                <a class="footer-link" href="{{ url_for('render_about') }}">About Us</a>
+                <a class="footer-link" href="{{ url_for('render_contact') }}">Contact Us</a>
+            </footer>
+        </div>
+    </body>
+</html>
+    
